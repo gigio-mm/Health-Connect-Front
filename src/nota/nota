@@ -1,0 +1,40 @@
+<div className='px-10 py-7 '>
+      <img src="src\assets\images\logo2.svg" alt="" className="h-8 w-auto" /> {/* Ajusta tamanho da logo */}
+    </div>
+    <Separator/>
+
+
+
+
+
+import { useState } from 'react'
+import * as React from "react"
+import '@/styles/App.css'
+import '@/styles/index.css'
+import { Separator } from "@/components/ui/separator"
+
+
+
+
+
+export function NavBar() {
+  const [count, setCount] = useState(0)
+
+  return (
+    <>
+    <div className='px-10 py-7 '>
+      <img src="src\assets\logo2.svg" alt="" className="h-8 w-auto" /> {/* Ajusta tamanho da logo */}
+    </div>
+    <Separator/>
+    </>
+  )
+}
+
+<select
+                  id="specialty"
+                  name="specialty"
+                  value={formData.specialty}
+                  onChange={handleInputChange}
+                  required
+                  className="flex h-10 w-full items-center justify-between rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus:outline-none focus:ring-2 focus:ring-ring focus:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  >

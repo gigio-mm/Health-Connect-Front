@@ -1,0 +1,74 @@
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Dependências
+node_modules
+.pnpm-store
+
+# Build e Distribuição
+dist
+dist-ssr
+build
+*.local
+
+# Editor e IDE
+.vscode/*
+!.vscode/extensions.json
+.idea
+.DS_Store
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+.claude
+
+# Variáveis de Ambiente (SEGURANÇA)
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# TanStack Router e Query
+.tanstack
+routeTree.gen.ts
+
+# Testes
+coverage
+
+# Cache de ferramentas
+.eslintcache
+*.tsbuildinfo
+
+# Arquivos de teste e temporários (REMOVER ANTES DE PRODUÇÃO)
+nul
+temp-check-user.js
+test-*.js
+test-*.cjs
+test-*.html
+*-TESTE.sql
+popular-horarios-medicos.js
+criar-horarios-medicos.js
+cadastrar-horario-manual.js
+create-test-appointments.*
+check-patients-db.cjs
+create-admin-hash.js
+insert-doctor-credentials.js
+medico.route.FIXED.ts
+
+# SQL de desenvolvimento (mover para pasta /database se necessário)
+create-admin-user.sql
+create-doctor-manual.sql
+create-doctor-user.sql
+fix-doctor-user.sql
+verify-doctor-user.sql
+EXECUTAR-ESTE-SQL.sql
+FINAL-FIX-DOCTOR*.sql
+SQL-*.sql

@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --background: #e4f2fe;
+    --foreground: #132190;
+    --card: #e4f2fe;
+    --card-foreground: #132190;
+    --popover: #e4f2fe;
+    --popover-foreground: #132190;
+    --primary: #132190;
+    --primary-foreground: #e4f2fe;
+    --secondary: #87b7fe;
+    --secondary-foreground: #004af7;
+    --muted: #f9fafb;
+    --muted-foreground: #132190;
+    --accent: #87b7fe;
+    --accent-foreground: #004af7;
+    --destructive: #920c0a;
+    --destructive-foreground: #e4f2fe;
+    --border: #87b7fe;
+    --input: #f4f5f7;
+    --ring: #004af7;
+    --chart-1: #86a7c8;
+    --chart-2: #eea591;
+    --chart-3: #5a7ca6;
+    --chart-4: #466494;
+    --chart-5: #334c82;
+    --sidebar: #e4f2fe;
+    --sidebar-foreground: #132190;
+    --sidebar-primary: #87b7fe;
+    --sidebar-primary-foreground: #132190;
+    --sidebar-accent: #87b7fe;
+    --sidebar-accent-foreground: #1e3a8a;
+    --sidebar-border: #1e3a8a;
+    --sidebar-ring: #e05d38;
+    --radius: 0.75rem;
+    
+  }
+
+  .dark {
+    --background: #1c2433;
+    --foreground: #e5e5e5;
+    --card: #2a3040;
+    --card-foreground: #e5e5e5;
+    --popover: #262b38;
+    --popover-foreground: #e5e5e5;
+    --primary: #e05d38;
+    --primary-foreground: #ffffff;
+    --secondary: #2a303e;
+    --secondary-foreground: #e5e5e5;
+    --muted: #2a303e;
+    --muted-foreground: #a3a3a3;
+    --accent: #2a3656;
+    --accent-foreground: #bfdbfe;
+    --destructive: #ef4444;
+    --destructive-foreground: #ffffff;
+    --border: #3d4354;
+    --input: #3d4354;
+    --ring: #e05d38;
+    --chart-1: #86a7c8;
+    --chart-2: #e6a08f;
+    --chart-3: #5a7ca6;
+    --chart-4: #466494;
+    --chart-5: #334c82;
+    --sidebar: #2a303f;
+    --sidebar-foreground: #e5e5e5;
+    --sidebar-primary: #e05d38;
+    --sidebar-primary-foreground: #ffffff;
+    --sidebar-accent: #2a3656;
+    --sidebar-accent-foreground: #bfdbfe;
+    --sidebar-border: #3d4354;
+    --sidebar-ring: #e05d38;
+  }
+
+  * {
+    border-color: var(--border);
+  }
+
+  body {
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: Inter, sans-serif;
+    letter-spacing: normal;
+  }
+}
