@@ -8,7 +8,7 @@ import { Calendar, Loader2, CheckCircle2, AlertCircle } from 'lucide-react'
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '@/components/ui/table'
 import { Badge } from '@/components/ui/badge'
 import axios from 'axios'
-import { useToast } from '@/hooks/use-toast'
+// import { useToast } from '@/hooks/use-toast' // ARQUIVO NÃO EXISTE - COMENTADO TEMPORARIAMENTE
 
 export const Route = createFileRoute('/_admin/generate-slots')({
   component: RouteComponent,
@@ -42,7 +42,8 @@ interface DoctorWithHorarios extends Doctor {
 }
 
 function RouteComponent() {
-  const { toast } = useToast()
+  // const { toast } = useToast() // COMENTADO - use-toast não existe
+  const toast = (params: any) => console.log('Toast:', params.title, params.description) // Fallback temporário
   const [doctors, setDoctors] = useState<DoctorWithHorarios[]>([])
   const [isLoading, setIsLoading] = useState(true)
   const [isGenerating, setIsGenerating] = useState(false)
